@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import Logs.log4j;
 import baseTests.commonTest;
 import login.loggedInCheck;
 import login.loginPage;
@@ -18,6 +19,7 @@ public class LoginDataProviderTest extends commonTest
 	{
 		return new Object[][]{{"dummy1","dummy1"},{"dummyUsername","dummy_password"}};
 	}
+	
 	@Test(dataProvider="Authentication")
 	public void canUserLogin(String username, String password)
 	{
@@ -26,5 +28,6 @@ public class LoginDataProviderTest extends commonTest
 			.withPassword(password)
 			.login();
 		Assert.assertEquals(loggedInCheck.isAt(), true, "Login failed");//actual,expected
+		log4j.Log.info("Test passed");
 	}
 }
