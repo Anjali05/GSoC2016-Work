@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
+     <testSourceDirectory>src/loginAndRegistrationTests</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -55,6 +56,6 @@
     	<artifactId>poi-ooxml</artifactId>
     	<version>3.9</version>
 	</dependency>
-  
+	
   </dependencies>
 </project>
