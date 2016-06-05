@@ -12,4 +12,4 @@ env:
 script:
   - ls
   - cd $FRAMEWORK_DIR && mvn clean && mvn install
-  - cd ../Test && mvn install && mvn compile &&  mvn test
+  - cd ../Test mvn compile &&  mvn test
