@@ -3,10 +3,14 @@ language: java
 jdk:
   - oraclejdk8
 
-before_install:
-  - wget https://github.com/Anjali05/GSoC2016-Work/tree/master/Framework/target/Framework-0.0.1-SNAPSHOT.jar
+#before_install:
+#  - wget https://github.com/Anjali05/GSoC2016-Work/tree/master/Framework/target/Framework-0.0.1-SNAPSHOT.jar
 
 script:
+  - cd Framework
+  - mvn clean
+  - mvn install
+  - cd..
   - cd Test
   - mvn install
   - mvn compile
