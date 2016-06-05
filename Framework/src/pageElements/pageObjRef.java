@@ -13,4 +13,5 @@ public class pageObjRef
 	public static By password = By.xpath(".//*[@id='dw__login']/div/fieldset/label[2]/input");
 	public static By loginClick = By.xpath(".//*[@id='dw__login']/div/fieldset/button");
 
+	public static By Logout = By.xpath(".//*[@id='dokuwiki__usertools']/ul/li[3]/a");
 }

@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import Logs.log4j;
 
@@ -20,8 +21,9 @@ public class driver
 	public static void initialize()
 	{
 		DOMConfigurator.configure("log4j.xml");
-		System.setProperty("webdriver.chrome.driver", "D:\\GSoC Workspace\\ChromeDriver\\chromedriver.exe");
-		Instance= new ChromeDriver();
+	//	System.setProperty("webdriver.chrome.driver", "D:\\GSoC Workspace\\ChromeDriver\\chromedriver.exe");
+	//	Instance= new ChromeDriver();
+		Instance= new FirefoxDriver();
 		log4j.Log.info("driver started");
 		Instance.manage().window().maximize();
 		Instance.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

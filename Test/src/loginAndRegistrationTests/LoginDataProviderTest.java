@@ -17,7 +17,7 @@ public class LoginDataProviderTest extends commonTest
 	@DataProvider(name = "Authentication")
 	public static Object[][] credentials()
 	{
-		return new Object[][]{{"dummy1","dummy1"},{"dummyUsername","dummy_password"}};
+		return new Object[][]{{"anjalis","anjali05"},{"dummyUsername","dummy_password"}};
 	}
 	
 	@Test(dataProvider="Authentication")
