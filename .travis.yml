@@ -5,15 +5,11 @@ jdk:
 
 #before_install:
 #  - wget https://github.com/Anjali05/GSoC2016-Work/tree/master/Framework/target/Framework-0.0.1-SNAPSHOT.jar
+env:
+  - FRAMEWORK_dir=Framework
+  - TEST_DIR=Test
 
 script:
-  - cd Framework
-  - mvn clean
-  - mvn install
-  - cd
-  - pwd
   - ls
-  - cd Test
-  - mvn install
-  - mvn compile
-  - mvn test
+  - cd FRAMEWORK_dir && mvn clean && mvn install
+  - cd TEST_DIR && mvn install && mvn compile &&  mvn test
