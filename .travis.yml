@@ -10,7 +10,7 @@ script:
   - cd Framework
   - mvn clean
   - mvn install
-  - cd..
+  - cd
   - cd Test
   - mvn install
   - mvn compile
