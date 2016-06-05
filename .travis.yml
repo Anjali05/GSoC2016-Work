@@ -11,5 +11,5 @@ env:
 
 script:
   - ls
-  - cd FRAMEWORK_dir && mvn clean && mvn install
-  - cd TEST_DIR && mvn install && mvn compile &&  mvn test
+  - cd $FRAMEWORK_dir && mvn clean && mvn install
+  - cd $TEST_DIR && mvn install && mvn compile &&  mvn test
