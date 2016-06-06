@@ -9,6 +9,9 @@ env:
   - FRAMEWORK_DIR=Framework
 #  - TEST_DIR=Test
 
+addons:
+   firefox: "latest"
+
 script:
   - ls
   - cd $FRAMEWORK_DIR && mvn clean && mvn install
