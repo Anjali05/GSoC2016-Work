@@ -10,7 +10,7 @@ env:
 #  - TEST_DIR=Test
 
 addons:
-   firefox: "latest"
+   firefox: "46.0.1"
 
 script:
   - ls
